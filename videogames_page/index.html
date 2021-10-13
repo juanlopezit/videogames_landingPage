@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videogames Landing Page</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section
+      class="w-100 min-vh-100 position-relative d-flex align-items-center"
+    >
+      <div class="circle w-100 h-100"></div>
+      <header
+        class="
+          position-absolute
+          w-100
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <a href="#"
+          ><img
+            src="./img/logo.png"
+            width="100px"
+            class="mb-2 position-relative mw-80"
+        /></a>
+        <ul class="position-relative d-flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div
+        class="
+          container
+          position-relative
+          w-100
+          d-flex
+          justify-content-between
+          align-items-center
+        "
+      >
+        <div class="textBox">
+          <h2>Never Stop <span class="text-danger">Playing</span></h2>
+          <p class="text-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus
+            neque ipsam sequi nam sit? Ipsum expedita blanditiis temporibus ad
+            aperiam ratione libero, et quae nemo maiores deserunt, ex aspernatur
+            veniam aliquam modi voluptatibus voluptas. Itaque veniam quam non
+            aliquam?
+          </p>
+          <a
+            href="#"
+            class="
+              d-inline-block
+              mt-2
+              p-2
+              text-light
+              font-italic
+              bg-primary
+              rounded-pill
+            "
+            >Learn More</a
+          >
+        </div>
+        <div class="imgBox">
+          <img src="./img/switch.png" alt="game-console" class="switch" />
+        </div>
+        <ul class="img-list ml-5">
+          <li>
+            <img
+              src="./img/3d.png"
+              onclick="imgSlider('./img/3d.png')"
+              alt="console"
+              width="60px"
+              class="ml-5"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/game.png"
+              onclick="imgSlider('./img/game.png')"
+              alt="console2"
+              width="100px"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/control.png"
+              onclick="imgSlider('./img/control.png')"
+              alt="console3"
+              width="100px"
+            />
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <a href="#"><img src="./img/facebook.png" alt="facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/twitter.png" alt="twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/instagram.png" alt="instagram" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".switch").src = anything;
+      }
+    </script>
+  </body>
+</html>

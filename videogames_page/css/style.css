@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", sans-serif;
+}
+
+h2 {
+  color: #333;
+  font-size: 4em;
+  line-height: 1.2em;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+header ul li a:hover {
+  color: #ff3300;
+}
+
+.textBox {
+  position: relative;
+  max-width: 600px;
+  right: 80px;
+}
+
+.textBox a:hover {
+  background-color: #ff3300 !important;
+  color: #fff !important;
+}
+
+.imgBox img:first-child {
+  transform: rotate(-10deg);
+  width: 400px;
+}
+
+.img-list {
+  position: absolute;
+  left: 50%;
+  top: 410px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.img-list li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img-list li img {
+  max-width: 60px;
+}
+
+.img-list li:hover {
+  transform: translateY(-18px);
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  right: 1200px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin: 25px 80px;
+  transform: scale(0.6);
+  filter: invert(1);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #1055bd;
+  clip-path: circle(800px at left 200px);
+}
+
+@media (max-width: 992px) {
+  header ul li a {
+    margin-right: 10px;
+  }
+  .img-list {
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .textBox {
+    margin-left: 10px;
+    margin-top: 30px;
+  }
+  .textBox {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .switch {
+    display: none;
+  }
+  .img-list {
+    display: none;
+  }
+  .textBox {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .textBox {
+    margin-top: 70px;
+  }
+  header ul li a {
+    margin-left: 30px;
+  }
+  header a img {
+    margin-left: 150px;
+  }
+}
